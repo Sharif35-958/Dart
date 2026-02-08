@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:math';
 
 main(){
   print("Hello World");
@@ -129,6 +130,34 @@ switch (score) {
     print("Grade: F");
 }
 
+List<Map> students = [
+  {"name": "Alice", "age": 20 , "GPA": 3.0},
+  {"name": "Bob", "age": 22 , "GPA": 3.5},
+  {"name": "Charlie", "age": 19, "GPA": 2.8}
+];
+
+var student1 = students[0];
+var student2 = students[1];
+var student3 = students[2];
+
+if(student1['name'] == "Alice" && student1['GPA'] > 3.0) {
+print("You are Failed & your GPA is ${student1['GPA']}");
+
+}
+
+else if(student2['name'] == "Bob" && student2['GPA'] > 3.0) {
+print("You are Passed & your GPA is ${student2['GPA']}");
+}
 
 
+for(int index=0; index<100; index++){
+  print("Index: $index");
+} 
+
+for(var student in students ){
+  print("Name: ${student['name']}, Age: ${student['age']}, GPA: ${student['GPA']}");
+
+
+
+}
 }
