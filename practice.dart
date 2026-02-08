@@ -171,4 +171,28 @@ for(var student in students ){
 
 
 }
+
+students.forEach((student) {
+  if(student['GPA'] < 2.00){
+     print(" ${student['name']} You are Failed & your GPA is ${student['GPA']}");
+  }
+   else{
+     print(" ${student['name']} You are Passed & your GPA is ${student['GPA']}");
+  }
+}
+
+);
+int index = 1;
+do {
+  print("This will run at least once. Index: $index");
+  index++;
+} while(index <= 15);
+
+index= 0;
+while (index < 5) {
+  print("Index: $index");
+  index++;
+}
+
+
 }
