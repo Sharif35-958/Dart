@@ -133,7 +133,10 @@ switch (score) {
 List<Map> students = [
   {"name": "Alice", "age": 20 , "GPA": 3.0},
   {"name": "Bob", "age": 22 , "GPA": 3.5},
-  {"name": "Charlie", "age": 19, "GPA": 2.8}
+  {"name": "Charlie", "age": 19, "GPA": 1.8},
+  {"name": "David", "age": 21, "GPA": 2.5},
+  {"name": "Eve", "age": 23, "GPA": 0.8}
+
 ];
 
 var student1 = students[0];
@@ -155,7 +158,15 @@ for(int index=0; index<100; index++){
 } 
 
 for(var student in students ){
-  print("Name: ${student['name']}, Age: ${student['age']}, GPA: ${student['GPA']}");
+
+  if(student['GPA'] < 2.00){
+     print(" ${student['name']} You are Failed & your GPA is ${student['GPA']}");
+  }
+   else{
+     print(" ${student['name']} You are Passed & your GPA is ${student['GPA']}");
+  }
+
+ // print("Name: ${student['name']}, Age: ${student['age']}, GPA: ${student['GPA']}");
 
 
 
