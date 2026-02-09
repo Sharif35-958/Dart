@@ -9,6 +9,8 @@ main() {
 
  Son son = Son();
  son.run();
+ son.hotel();
+ son.hospital();
 }
  
 
