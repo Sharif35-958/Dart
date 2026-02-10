@@ -1,6 +1,5 @@
 import 'father.dart';
 class Son extends FatherClass {
-  @override
   void run() {
     print("My father's name is $name and he is $age years old. He works as a $occupation and earns a salary of \$$salary.");
    
